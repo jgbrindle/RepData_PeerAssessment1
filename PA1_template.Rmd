@@ -61,7 +61,7 @@ First we average the number of steps by day (ignoring NA values) split into the 
 
 The time interval with the highest average number of steps is shown on the chart and following that in table form.
 
-```{r activity pattern, echo=TRUE}
+```{r activityPattern, echo=TRUE}
 avgByInterval <- aggregate(steps~interval, myData, FUN = mean, na.rm=TRUE, na.action="na.pass")
 maxTime <- avgByInterval[which.max(avgByInterval$steps),]
 ggplot(data=avgByInterval, aes(x=interval, y=steps, group=1)) +

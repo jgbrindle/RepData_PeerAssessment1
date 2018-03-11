@@ -100,7 +100,7 @@ ggplot(data=avgByInterval, aes(x=interval, y=steps, group=1)) +
    geom_text(aes(label=paste("Interval with max steps = ", maxTime$interval, ". # steps = ",                     round(maxTime$steps,1)),y=-2,x=maxTime$interval), col='dark green',size=4) 
 ```
 
-![](PA1_template_files/figure-html/activity pattern-1.png)<!-- -->
+![](PA1_template_files/figure-html/activityPattern-1.png)<!-- -->
 
 ```r
 maxTime[c(1,2)]
